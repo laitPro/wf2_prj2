@@ -1,0 +1,20 @@
+.icon{
+	background-image: url($spritesheet-image);
+}
+.icon-i{
+	display: inline-block;
+	vertical-align:top;	
+}
+
+
+.icon-phone{
+	width: $phone-width;
+	height : $phone-height;
+	@include sprite-position($phone);
+}
+
+.icon-addres{
+	width: $addres-width;
+	height : $addres-height;
+	@include sprite-position($addres);
+}

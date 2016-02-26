@@ -1,0 +1,204 @@
+.main-header{
+
+}
+
+// Верхний блок хеадер с иконками
+.contacts{
+	background-color: #fff;
+	box-shadow: 0 2px #ebedef;
+	padding-top: 25px;
+	padding-bottom: 26px;
+}
+
+
+// Социальные иконки
+.socials{
+	float:left;
+}
+
+.socials_item{
+	display: inline-block;
+	vertical-align: top;
+	margin-right: 15px;
+
+	&:last-child{
+		margin-right: 0px;
+	}
+}
+
+.socials_link{
+	display: block;
+	border-radius: 50%;
+	width: 26px;
+	height: 26px;
+}
+
+
+.socials_link_fb{
+	@include sprite($fb);
+		&:hover{
+			@include sprite($fb-hover);
+		}
+}
+.socials_link_vk{
+	@include sprite($vk);
+		&:hover{
+			@include sprite($vk-hover);
+		}
+}
+.socials_link_tw{
+	@include sprite($tw);
+		&:hover{
+			@include sprite($tw-hover);
+		}
+}
+
+/********************/
+
+// Небольшая инфа адрес и телефон компании
+
+.contacts-info{
+	float:right;
+	padding-top: 5px;
+}
+
+.addres,.phone{
+	display: inline-block;
+	vertical-align: top;
+}
+.phone{
+	margin-left: 85px;
+}
+.addres-text,.phone-text{
+	margin-left:9px;
+}
+.addres-text{
+	font-size: 14px;
+}
+.phone-text{
+	font-size: 18px;
+}
+/***************************************/
+// Логотип и поиск по сайту
+.block-find{
+	padding-top: 32px;
+	font-size: 0;
+	margin-bottom: 30px;
+}
+// Логотип
+.logo{
+	display: block;
+	float: left;
+	margin-right: 56px;
+	padding: 0;
+}
+.logo-img{
+	width: 238px;
+	height: 36px;
+}
+.logo-text{
+	position: absolute;
+	top:0;
+	left: -9999px;
+}
+// Поиск
+.search{
+	float: left;
+	margin-right: 49px;
+	font-size: 0;
+}
+.search-input{
+	border-radius: 3px;
+	background-color: rgba(255,255,255,.6);
+	border: solid 1px #dee1e4;
+	font-size: 14px;
+	line-height: 32px;
+	width: 298px;
+	padding-left: 17px;
+	padding-right: 11px;
+}
+// Кнопка поиска
+.search-btn{
+	font-size: 14px;
+	width: 80px;
+	height: 34px;
+	line-height: 34px;
+	padding-left: 15px;
+	padding-right: 15px;
+	margin-left: -10px;
+
+	border-radius: 0 3px 3px 0;
+	background-color: $color-orange;
+}
+
+// Небольшое пользовательсоке меню
+.user-nav{
+	float: left;
+	font-size: 0;
+}
+.user-nav_item{
+	display: inline-block;
+	vertical-align:top;
+	margin-right: 32px;
+
+	&:last-child{
+		margin-right: 0;
+	}
+}
+.user-nav_link{
+	position:relative;
+	font-size: 16px;
+	line-height: 34px;
+
+	&:after{
+		position:absolute;
+		display:block;
+		content:'';
+		left:0;
+		right: 0;
+		bottom:-1px;
+		height:1px;
+		background:$color-black;
+	}
+}
+
+.user-nav_link_active{
+	color: $color-orange;
+
+	&:after{
+		background:$color-orange;
+	}
+}
+
+// Основное меню
+.nav{
+	background-color: #fff;
+	box-shadow: 0 2px #ebedef;
+	margin-bottom: 34px;
+}
+.main-nav{
+	font-size: 0;
+}
+.main-nav-item{
+	display: inline-block;
+	vertical-align:top;
+}
+.main-nav_link{
+	display: inline-block;
+	vertical-align:top;
+	line-height: 52px;
+	font-size: 16px;
+	padding: 0 15px;
+
+	&:hover{
+		background-color: #e4e2e2;
+	}
+	
+	&.main-nav_link_active{
+		background:$color-orange;
+		color:$color-white;
+}
+}
+
+
+

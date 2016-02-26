@@ -1,0 +1,54 @@
+.main-content{
+	float:right;
+	width: 743px;
+	margin-bottom: 28px;
+}
+
+// Блок с отображением вида
+.block__view_left{
+	width: 291px;
+	float:left;
+}
+
+.block__view_right{
+	width: 300px;
+	float: right;
+}
+
+.block__view{
+	background:#e4ebee;
+	border:1px solid $ac-border;
+	margin-bottom: 21px;
+	border-radius:5px;
+}
+
+.block__view__title{
+	font-size: 14px;
+	line-height: 16px;
+	color: #5d656c;
+	display:inline-block;
+	vertical-align:middle;
+	margin-right: 11px;
+}
+
+.select__content{
+	display: inline-block;
+	vertical-align:top;
+}
+
+.sort__content{
+	display: inline-block;
+	vertical-align:top;
+}
+
+.sort__content-item{
+	display: inline-block;
+	vertical-align:top;
+	border-left: 1px solid $ac-border;
+}
+
+.sort__content-link{
+	height: 50px;
+	width: 50px;
+}
+

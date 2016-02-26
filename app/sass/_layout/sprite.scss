@@ -1,0 +1,265 @@
+/*
+SCSS variables are information about icon's compiled state, stored under its original file name
+
+.icon-home {
+  width: $icon-home-width;
+}
+
+The large array-like variables contain all information about a single icon
+$icon-home: x y offset_x offset_y width height total_width total_height image_path;
+
+At the bottom of this section, we provide information about the spritesheet itself
+$spritesheet: width height image $spritesheet-sprites;
+*/
+$addres-name: 'addres';
+$addres-x: 12px;
+$addres-y: 71px;
+$addres-offset-x: -12px;
+$addres-offset-y: -71px;
+$addres-width: 12px;
+$addres-height: 16px;
+$addres-total-width: 99px;
+$addres-total-height: 87px;
+$addres-image: '../imgs/sprites/sprite.png';
+$addres: (12px, 71px, -12px, -71px, 12px, 16px, 99px, 87px, '../imgs/sprites/sprite.png', 'addres', );
+$checkbox-active-name: 'checkbox-active';
+$checkbox-active-x: 80px;
+$checkbox-active-y: 19px;
+$checkbox-active-offset-x: -80px;
+$checkbox-active-offset-y: -19px;
+$checkbox-active-width: 19px;
+$checkbox-active-height: 19px;
+$checkbox-active-total-width: 99px;
+$checkbox-active-total-height: 87px;
+$checkbox-active-image: '../imgs/sprites/sprite.png';
+$checkbox-active: (80px, 19px, -80px, -19px, 19px, 19px, 99px, 87px, '../imgs/sprites/sprite.png', 'checkbox-active', );
+$checkbox-hover-name: 'checkbox-hover';
+$checkbox-hover-x: 0px;
+$checkbox-hover-y: 52px;
+$checkbox-hover-offset-x: 0px;
+$checkbox-hover-offset-y: -52px;
+$checkbox-hover-width: 19px;
+$checkbox-hover-height: 19px;
+$checkbox-hover-total-width: 99px;
+$checkbox-hover-total-height: 87px;
+$checkbox-hover-image: '../imgs/sprites/sprite.png';
+$checkbox-hover: (0px, 52px, 0px, -52px, 19px, 19px, 99px, 87px, '../imgs/sprites/sprite.png', 'checkbox-hover', );
+$checkbox-name: 'checkbox';
+$checkbox-x: 19px;
+$checkbox-y: 52px;
+$checkbox-offset-x: -19px;
+$checkbox-offset-y: -52px;
+$checkbox-width: 19px;
+$checkbox-height: 19px;
+$checkbox-total-width: 99px;
+$checkbox-total-height: 87px;
+$checkbox-image: '../imgs/sprites/sprite.png';
+$checkbox: (19px, 52px, -19px, -52px, 19px, 19px, 99px, 87px, '../imgs/sprites/sprite.png', 'checkbox', );
+$fb-hover-name: 'fb-hover';
+$fb-hover-x: 26px;
+$fb-hover-y: 26px;
+$fb-hover-offset-x: -26px;
+$fb-hover-offset-y: -26px;
+$fb-hover-width: 26px;
+$fb-hover-height: 26px;
+$fb-hover-total-width: 99px;
+$fb-hover-total-height: 87px;
+$fb-hover-image: '../imgs/sprites/sprite.png';
+$fb-hover: (26px, 26px, -26px, -26px, 26px, 26px, 99px, 87px, '../imgs/sprites/sprite.png', 'fb-hover', );
+$fb-name: 'fb';
+$fb-x: 54px;
+$fb-y: 0px;
+$fb-offset-x: -54px;
+$fb-offset-y: 0px;
+$fb-width: 26px;
+$fb-height: 26px;
+$fb-total-width: 99px;
+$fb-total-height: 87px;
+$fb-image: '../imgs/sprites/sprite.png';
+$fb: (54px, 0px, -54px, 0px, 26px, 26px, 99px, 87px, '../imgs/sprites/sprite.png', 'fb', );
+$hundle-name: 'hundle';
+$hundle-x: 24px;
+$hundle-y: 71px;
+$hundle-offset-x: -24px;
+$hundle-offset-y: -71px;
+$hundle-width: 8px;
+$hundle-height: 14px;
+$hundle-total-width: 99px;
+$hundle-total-height: 87px;
+$hundle-image: '../imgs/sprites/sprite.png';
+$hundle: (24px, 71px, -24px, -71px, 8px, 14px, 99px, 87px, '../imgs/sprites/sprite.png', 'hundle', );
+$i-down-name: 'i-down';
+$i-down-x: 80px;
+$i-down-y: 49px;
+$i-down-offset-x: -80px;
+$i-down-offset-y: -49px;
+$i-down-width: 18px;
+$i-down-height: 11px;
+$i-down-total-width: 99px;
+$i-down-total-height: 87px;
+$i-down-image: '../imgs/sprites/sprite.png';
+$i-down: (80px, 49px, -80px, -49px, 18px, 11px, 99px, 87px, '../imgs/sprites/sprite.png', 'i-down', );
+$i-up-name: 'i-up';
+$i-up-x: 80px;
+$i-up-y: 38px;
+$i-up-offset-x: -80px;
+$i-up-offset-y: -38px;
+$i-up-width: 18px;
+$i-up-height: 11px;
+$i-up-total-width: 99px;
+$i-up-total-height: 87px;
+$i-up-image: '../imgs/sprites/sprite.png';
+$i-up: (80px, 38px, -80px, -38px, 18px, 11px, 99px, 87px, '../imgs/sprites/sprite.png', 'i-up', );
+$phone-name: 'phone';
+$phone-x: 0px;
+$phone-y: 71px;
+$phone-offset-x: 0px;
+$phone-offset-y: -71px;
+$phone-width: 12px;
+$phone-height: 16px;
+$phone-total-width: 99px;
+$phone-total-height: 87px;
+$phone-image: '../imgs/sprites/sprite.png';
+$phone: (0px, 71px, 0px, -71px, 12px, 16px, 99px, 87px, '../imgs/sprites/sprite.png', 'phone', );
+$radio-active-name: 'radio-active';
+$radio-active-x: 38px;
+$radio-active-y: 52px;
+$radio-active-offset-x: -38px;
+$radio-active-offset-y: -52px;
+$radio-active-width: 19px;
+$radio-active-height: 19px;
+$radio-active-total-width: 99px;
+$radio-active-total-height: 87px;
+$radio-active-image: '../imgs/sprites/sprite.png';
+$radio-active: (38px, 52px, -38px, -52px, 19px, 19px, 99px, 87px, '../imgs/sprites/sprite.png', 'radio-active', );
+$radio-hover-name: 'radio-hover';
+$radio-hover-x: 57px;
+$radio-hover-y: 52px;
+$radio-hover-offset-x: -57px;
+$radio-hover-offset-y: -52px;
+$radio-hover-width: 19px;
+$radio-hover-height: 19px;
+$radio-hover-total-width: 99px;
+$radio-hover-total-height: 87px;
+$radio-hover-image: '../imgs/sprites/sprite.png';
+$radio-hover: (57px, 52px, -57px, -52px, 19px, 19px, 99px, 87px, '../imgs/sprites/sprite.png', 'radio-hover', );
+$radio-name: 'radio';
+$radio-x: 80px;
+$radio-y: 0px;
+$radio-offset-x: -80px;
+$radio-offset-y: 0px;
+$radio-width: 19px;
+$radio-height: 19px;
+$radio-total-width: 99px;
+$radio-total-height: 87px;
+$radio-image: '../imgs/sprites/sprite.png';
+$radio: (80px, 0px, -80px, 0px, 19px, 19px, 99px, 87px, '../imgs/sprites/sprite.png', 'radio', );
+$tw-hover-name: 'tw-hover';
+$tw-hover-x: 54px;
+$tw-hover-y: 26px;
+$tw-hover-offset-x: -54px;
+$tw-hover-offset-y: -26px;
+$tw-hover-width: 26px;
+$tw-hover-height: 26px;
+$tw-hover-total-width: 99px;
+$tw-hover-total-height: 87px;
+$tw-hover-image: '../imgs/sprites/sprite.png';
+$tw-hover: (54px, 26px, -54px, -26px, 26px, 26px, 99px, 87px, '../imgs/sprites/sprite.png', 'tw-hover', );
+$tw-name: 'tw';
+$tw-x: 0px;
+$tw-y: 26px;
+$tw-offset-x: 0px;
+$tw-offset-y: -26px;
+$tw-width: 26px;
+$tw-height: 26px;
+$tw-total-width: 99px;
+$tw-total-height: 87px;
+$tw-image: '../imgs/sprites/sprite.png';
+$tw: (0px, 26px, 0px, -26px, 26px, 26px, 99px, 87px, '../imgs/sprites/sprite.png', 'tw', );
+$vk-hover-name: 'vk-hover';
+$vk-hover-x: 27px;
+$vk-hover-y: 0px;
+$vk-hover-offset-x: -27px;
+$vk-hover-offset-y: 0px;
+$vk-hover-width: 27px;
+$vk-hover-height: 26px;
+$vk-hover-total-width: 99px;
+$vk-hover-total-height: 87px;
+$vk-hover-image: '../imgs/sprites/sprite.png';
+$vk-hover: (27px, 0px, -27px, 0px, 27px, 26px, 99px, 87px, '../imgs/sprites/sprite.png', 'vk-hover', );
+$vk-name: 'vk';
+$vk-x: 0px;
+$vk-y: 0px;
+$vk-offset-x: 0px;
+$vk-offset-y: 0px;
+$vk-width: 27px;
+$vk-height: 26px;
+$vk-total-width: 99px;
+$vk-total-height: 87px;
+$vk-image: '../imgs/sprites/sprite.png';
+$vk: (0px, 0px, 0px, 0px, 27px, 26px, 99px, 87px, '../imgs/sprites/sprite.png', 'vk', );
+$spritesheet-width: 99px;
+$spritesheet-height: 87px;
+$spritesheet-image: '../imgs/sprites/sprite.png';
+$spritesheet-sprites: ($addres, $checkbox-active, $checkbox-hover, $checkbox, $fb-hover, $fb, $hundle, $i-down, $i-up, $phone, $radio-active, $radio-hover, $radio, $tw-hover, $tw, $vk-hover, $vk, );
+$spritesheet: (99px, 87px, '../imgs/sprites/sprite.png', $spritesheet-sprites, );
+
+/*
+The provided mixins are intended to be used with the array-like variables
+
+.icon-home {
+  @include sprite-width($icon-home);
+}
+
+.icon-email {
+  @include sprite($icon-email);
+}
+
+Here are example usages in HTML:
+
+`display: block` sprite:
+<div class="icon-home"></div>
+
+`display: inline-block` sprite:
+<img class="icon-home" />
+*/
+@mixin sprite-width($sprite) {
+  width: nth($sprite, 5);
+}
+
+@mixin sprite-height($sprite) {
+  height: nth($sprite, 6);
+}
+
+@mixin sprite-position($sprite) {
+  $sprite-offset-x: nth($sprite, 3);
+  $sprite-offset-y: nth($sprite, 4);
+  background-position: $sprite-offset-x  $sprite-offset-y;
+}
+
+@mixin sprite-image($sprite) {
+  $sprite-image: nth($sprite, 9);
+  background-image: url(#{$sprite-image});
+}
+
+@mixin sprite($sprite) {
+  @include sprite-image($sprite);
+  @include sprite-position($sprite);
+  @include sprite-width($sprite);
+  @include sprite-height($sprite);
+}
+
+/*
+The `sprites` mixin generates identical output to the CSS template
+  but can be overridden inside of SCSS
+
+@include sprites($spritesheet-sprites);
+*/
+@mixin sprites($sprites) {
+  @each $sprite in $sprites {
+    $sprite-name: nth($sprite, 10);
+    .#{$sprite-name} {
+      @include sprite($sprite);
+    }
+  }
+}

@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8"/>
+		<title> Index page</title>
+		<link rel="stylesheet" href="css/main.css"/>
+	</head>
+	<body>
+		<div class="wrapper">
+			<header class="main-header">
+				<div class="contacts">
+					<div class="container clearfix">
+						<ul class="socials">
+							<li class="socials_item"><a href="#" class="socials_link_fb socials_link"></a></li>
+							<li class="socials_item"><a href="#" class="socials_link_vk socials_link"></a></li>
+							<li class="socials_item"><a href="#" class="socials_link_tw socials_link"></a></li>
+						</ul>
+						<div class="contacts-info">				
+							<div class="addres"> <i class="icon icon-i icon-addres"></i><span class="addres-text">ул. Маяковская 6, офис 17</span></div><a href="#" class="phone"><i class="icon icon-i icon-phone"></i><span class="phone-text">+7 (921) 123-12-13</span></a>
+						</div>
+					</div>
+				</div>
+				<div class="container clearfix block-find"><a href="index.html" class="logo"><img src="imgs/content/logo.png" alt="logo" class="log-img"/>
+						<h1 class="logo-text">Cooltech</h1></a>
+					<div class="search">
+						<input type="text" name="find" placeholder="Что будем искать" class="search-input"/>
+						<button type="submit" class="search-btn">Найти</button>
+					</div>
+					<ul class="user-nav">
+						<li class="user-nav_item"><a href="#" class="user-nav_link user-nav_link_active">Карта проезда</a>
+						</li>
+						<li class="user-nav_item"><a href="#" class="user-nav_link">История заказов</a>
+						</li>
+						<li class="user-nav_item"><a href="#" class="user-nav_link">Корзина</a>
+						</li>
+					</ul>
+				</div>
+				<div class="nav">					
+					<div class="container clearfix">
+						<ul class="main-nav">
+							<li class="main-nav-item"><a href="#" class="main-nav_link">Планшеты</a>
+							</li>
+							<li class="main-nav-item"><a href="index.html" class="main-nav_link main-nav_link_active">Мобильные телефоны</a>
+							</li>
+							<li class="main-nav-item"><a href="#" class="main-nav_link">Mp3 плееры</a>
+							</li>
+							<li class="main-nav-item"><a href="#" class="main-nav_link">Персональыне компьютеры</a>
+							</li>
+							<li class="main-nav-item"><a href="#" class="main-nav_link">Ноутбуки</a>
+							</li>
+							<li class="main-nav-item"><a href="#" class="main-nav_link">Аксуссуары</a>
+							</li>
+							<li class="main-nav-item"><a href="#" class="main-nav_link">Бытовая техника</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</header>
+			<div class="container">
+				<ul class="breadcrumbs-list">
+					<li class="breadcrumbs-item"><a href="#" class="breadcrumbs-link">Главная</a>
+					</li>
+					<li class="breadcrumbs-item"><a href="index.html" class="breadcrumbs-link breadcrumbs-link_active">Каталог</a>
+					</li>
+				</ul>
+			</div>
+			<div class="container">
+				<h2 class="main-title">Мобильные телефоны	</h2>
+			</div>
+			<div class="container clearfix">
+				<form class="sidebar">
+					<ul class="phone-category">
+						<li class="phone-category_item"><a href="#" class="phone-category_link">Флагманы</a>
+						</li>
+						<li class="phone-category_item"><a href="#" class="phone-category_link phone-category_link_active">Бюджетная линейка</a>
+						</li>
+					</ul>
+					<div class="acco">
+						<ul class="acco__list">
+							<li class="acco-item"><a href="#" class="acco-triger-top acco-trigger togle-down">Наличие в магазинах	</a>
+								<ul class="acco__content">
+									<li class="acco__content-item">
+										<input type="radio" name="mag" id="All" checked="checked"/>
+										<label for="All" class="radio">Во всех магазинах</label>
+									</li>
+									<li class="acco__content-item">
+										<input type="radio" name="mag" id="Not-all"/>
+										<label for="Not-all" class="radio">В ближайшем ко мне магазине</label>
+									</li>
+								</ul>
+							</li>
+							<li class="acco-item"><a href="#" class="acco-trigger togle-down">Бренды</a>
+								<ul class="acco__content">
+									<li class="acco__content-item">
+										<input type="checkbox" name="Lenovo" id="Lenovo"/>
+										<label for="Lenovo" class="checkbox">Lenovo</label>
+									</li>
+									<li class="acco__content-item">
+										<input type="checkbox" name="Apple" id="Apple"/>
+										<label for="Apple" class="checkbox">Apple</label>
+									</li>
+									<li class="acco__content-item">
+										<input type="checkbox" name="Samsung" id="Samsung"/>
+										<label for="Samsung" class="checkbox">Samsung</label>
+									</li>
+									<li class="acco__content-item">
+										<input type="checkbox" name="Asus" id="Asus"/>
+										<label for="Asus" class="checkbox">Asus</label>
+									</li>
+									<li class="acco__content-item">
+										<input type="checkbox" name="Motorola" id="Motorola"/>
+										<label for="Motorola" class="checkbox">Motorola</label>
+									</li><a href="#" class="reset-filter">Сбросить фильтр</a>
+								</ul>
+							</li>
+							<li class="acco-item"><a href="#" class="acco-trigger togle-down">Цена</a>
+								<div class="acco__content">					<span class="input-title">от</span>
+									<input type="text" id="min" value="2500" disabled="disabled" class="input-slider input-slider-left"/><span class="input-title">до</span>
+									<input type="text" id="max" value="15000" disabled="disabled" class="input-slider input-slider-right"/>
+									<div id="slider"></div>
+								</div>
+							</li>
+							<li class="acco-item"><a href="#" class="acco-trigger togle-down">Цвет</a>
+								<input type="text" name="color" id="color" value=""/>
+								<ul class="block-color acco__content">
+									<li class="color-item-white color-item"></li>
+									<li class="color-item-grey color-item"></li>
+									<li class="color-item-black color-item color-item-active"></li>
+									<li class="color-item-d-blue color-item"></li>
+									<li class="color-item-red color-item"></li>
+									<li class="color-item-yellow color-item"></li>
+									<li class="color-item-orange color-item"></li>
+									<li class="color-item-green color-item"></li>
+									<li class="color-item-blue color-item"></li>
+									<li class="color-item-d-pink color-item"></li>
+									<li class="color-item-pink color-item"></li>
+									<li class="color-item-brown color-item"></li>
+								</ul>
+							</li>
+							<li class="acco-item"><a href="#" class="acco-trigger togle-down">Операционные системы		</a>
+								<ul class="acco__content">
+									<li class="acco__content-item">
+										<input type="checkbox" name="Android" id="Android"/>
+										<label for="Android" class="checkbox">Android</label>
+									</li>
+									<li class="acco__content-item">
+										<input type="checkbox" name="iOs" id="iOs"/>
+										<label for="iOs" class="checkbox">iOs</label>
+									</li>
+									<li class="acco__content-item">
+										<input type="checkbox" name="Windows Mobile" id="Windows Mobile"/>
+										<label for="Windows Mobile" class="checkbox">Windows Mobile</label>
+									</li>
+									<li class="acco__content-item">
+										<input type="checkbox" name="Symbian" id="Symbian"/>
+										<label for="Symbian" class="checkbox">Symbian</label>
+									</li>
+									<li class="acco__content-item">
+										<input type="checkbox" name="Custom" id="Custom"/>
+										<label for="Custom" class="checkbox">Custom</label>
+									</li><a href="#" class="reset-filter">Сбросить фильтр</a>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</form>
+				<main class="main-content">
+					<div class="block__view clearfix">
+						<div class="block__view_left">
+							<div class="block__view__title">Сортировать по</div>
+							<div class="select__content">
+								<select class="select">
+									<option value="">по цене</option>
+									<option value="">по популярности</option>
+								</select>
+							</div>
+						</div>
+						<div class="block__view_right">
+							<div class="block__view__title">Вид каталога</div>
+							<ul class="sort__content">
+								<li class="sort__content-row sort__content-item"><a href="#" class="sort__content-link">a</a></li>
+								<li class="sort__content-grid sort__content-item"><a href="#" class="sort__content-link">a</a></li>
+								<li class="sort__content-line sort__content-item"><a href="#" class="sort__content-link">a</a></li>
+							</ul>
+						</div>
+					</div>
+				</main>
+			</div>
+		</div>
+	</body>
+	<script src="js/jquery.js"></script>
+	<script src="js/jquery-ui.min.js"></script>
+	<script src="js/slider.js"></script>
+	<script src="js/main.js"></script>
+</html>

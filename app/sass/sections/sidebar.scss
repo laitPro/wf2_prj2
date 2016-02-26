@@ -1,0 +1,313 @@
+.sidebar{
+	float:left;
+	width: 332px;	
+}
+
+// Категория телефонов
+.phone-category{
+	margin-bottom: 38px;
+	background: $color-swhite;
+	border-radius: 5px;
+	border: solid 1px $ac-border;
+}
+.phone-category_item{
+	border-bottom:solid 1px $ac-border;
+
+	&:last-child{
+		border:none;
+	}
+}
+.phone-category_link{
+	display:inline-block;
+	vertical-align:top;
+	width:100%;
+	line-height: 46px;
+	padding-left: 28px;
+	font-size: 14px;
+	color:#5d656c;
+
+	&.phone-category_link_active {
+		background-color: #d9e5ea;
+	}
+}
+
+// Аккордеон
+.acco{
+	background:$color-swhite;
+	border-radius: 5px;
+	border: solid 1px $ac-border;
+}
+.acco__list{
+	font-size: 0;
+}
+.acco-item{
+	border-bottom:solid 1px $ac-border;
+
+	&:last-child{
+		border-bottom:none;
+	}
+}
+.acco__content{
+	padding-bottom: 18px;
+	box-sizing:content-box;
+	display:none;
+	padding-left: 28px;
+}
+
+.acco-trigger{
+	line-height: 45px;
+	display:inline-block;
+	vertical-align:top;
+	width:100%;
+	font-size: 14px;
+	padding-left: 28px;
+
+	position:relative;
+
+	&.togle-up:hover:after{
+		position:absolute;
+		display:inline-block;
+		vertical-align:top;
+		line-height: 45px;
+		content:'';
+		right:12px;
+		top:50%;
+		color:#5d656c;
+		@include sprite($i-up);
+		margin-top: -$i-up-height/2;
+	}
+
+	&.togle-down:hover:after{
+		position:absolute;
+		display:inline-block;
+		vertical-align:top;
+		line-height: 45px;
+		content:'';
+		right:12px;
+		top:50%;
+		color:#5d656c;
+		@include sprite($i-down);
+		margin-top: -$i-down-height/2;
+	}
+	
+}
+
+.acco__content{
+	font-size: 0;
+
+}
+.acco-trigger-active{
+	background-color: #d9e5ea;
+}
+
+.acco__content-item{
+	font-size: 14px;
+	line-height: 28px;
+
+	input{
+		display: none;
+	}
+	
+	label{
+		position:relative;
+		padding-left: 30px;
+
+		&:before{
+			position:absolute;
+			content:'';			
+			top:50%;
+			left:0;				
+		}
+	}
+
+}
+// Радио кнопка
+.radio:before{
+	@include sprite($radio);
+	margin-top: -$radio-height/2;
+}
+input:checked + .radio:before{
+	@include sprite($radio-active);
+}
+input:not(:checked) + .radio:hover:before {
+	@include sprite($radio-hover);
+}
+// Чекбокс кнопка
+.checkbox:before{
+	@include sprite($checkbox);
+	margin-top: -$checkbox-height/2;
+}
+input:checked + .checkbox:before{
+	@include sprite($checkbox-active);
+}
+input:not(:checked) + .checkbox:hover:before {
+	@include sprite($checkbox-hover);
+}
+
+.reset-filter{
+	display: block;
+	font-size: 14px;
+	text-decoration:underline;
+	color:#5db2fc;
+	margin-top: 10px;
+}
+.input-title{
+	font-size: 14px;
+}
+// Ползунок для цены
+.input-slider{
+	position: relative;
+	width: 83px;
+	line-height: 30px;
+	padding-left: 10px;
+	margin-bottom: 18px;
+	margin-left: 14px;
+
+	font-size: 14px;
+	border-radius: 3px;
+	background-color: #fff;
+	-moz-box-shadow: inset 0 1px 1px rgba(148,148,148,.43);
+	box-shadow: inset 0 1px 1px rgba(148,148,148,.43);
+	border: solid 1px #ebedef;
+
+	&.input-slider-left{
+		margin-right: 48px;
+	}	
+}
+
+/* Ширина слайдера */
+
+#slider {
+    width: 273px;
+    margin-bottom: 12px;
+}
+/* Контейнер слайдера */
+.ui-slider {
+    position: relative;
+}
+
+/* Ползунок */
+.ui-slider .ui-slider-handle {
+    position: absolute;
+    z-index: 2;
+    width: 8px;   /* Задаем нужную ширину */
+
+    height: 14px;  /* и высоту */
+
+   	@include sprite($hundle);
+
+    cursor: pointer
+
+}
+.ui-slider .ui-slider-range {
+    position: absolute;
+    z-index: 1;
+    font-size: .7em;
+    display: block;
+    border: 0;
+    overflow: hidden;
+}
+.ui-slider-horizontal {
+     height: 3px; 
+}
+/* позиционируем ползунки */
+.ui-slider-horizontal .ui-slider-handle { 
+
+    top: 2px;
+    margin-left: -3px;
+    outline:none;
+}
+.ui-slider-handle + .ui-slider-handle{
+	margin-left: -4px;
+}
+
+.ui-slider-horizontal .ui-slider-range {
+    top: 0;
+    height: 100%;
+}
+
+.ui-slider-horizontal .ui-slider-range-min { 
+
+    left: 0;
+
+}
+
+.ui-slider-horizontal .ui-slider-range-max {
+    right: 0;
+}
+
+/* оформление полосы по которой ходит ползунок */
+
+.ui-widget-content { 
+    border:none;
+    background: #dee1e4;
+}
+
+/* оформление активного участка (между двумя ползунками) */
+.ui-widget-header { 
+    border:none;
+    background: #ff6600;
+}
+
+/* скругление для полосы слайдера */
+
+.ui-corner-all {
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+}
+
+// Блок с цветом
+#color{
+	display:none;
+}
+.block-color{
+	width: 240px;
+	margin-left: -22px;
+	margin-top: -22px;
+	padding-bottom: 18px;
+}
+.color-item{
+	display:inline-block;
+	vertical-align:top;
+	width: 37px;
+	height: 37px;
+	background:red;
+	margin-left: 22px;
+	margin-top: 22px;
+
+	border:1px solid #dee1e4;
+
+	&:hover{
+		border-color:$color-orange;
+		cursor:pointer;
+	}
+
+}
+
+.color-item-active{
+	border:2px solid $color-orange;
+}
+
+$colors: (
+	white : #ffffff,
+	grey : #cccccc,
+	black : #000000,
+	d-blue : #0a3153,
+	red : #ff1800,
+	yellow : #fff343,
+	orange : #fb914a,
+	green : #92c37c,
+	blue : #40a6ff,
+	d-pink : #9870ad,
+	pink : #dc78ad,
+	brown : #7f401d
+);
+
+.color-item {
+  @each $item, $color in $colors {
+    &-#{$item} {
+      background: $color;
+    }
+  }
+}

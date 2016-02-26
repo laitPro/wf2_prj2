@@ -1,0 +1,17 @@
+@import "_layout/normalize";
+@import "_layout/const";
+@import "_layout/config";
+@import "_layout/sprite";
+@import "_layout/system-of-icon";
+@import "sections/header";
+@import "sections/breadcrumbs";
+
+
+.main-title{
+	font-size: 20px;
+	margin-bottom: 25px;
+}
+
+@import "sections/sidebar";
+
+@import "sections/phone-list";

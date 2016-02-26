@@ -1,0 +1,7 @@
+mixin breadcrumbs(items)
+	.breadcrumbs
+		.container
+			ul.breadcrumbs__list
+				each item, i in items
+					li.breadcrumbs__item(class="#{i == items.length-1 ? 'breadcrumbs__item_active' : ''}")
+						a(href="#").breadcrumbs__link= item

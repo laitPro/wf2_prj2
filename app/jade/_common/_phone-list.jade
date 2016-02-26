@@ -1,0 +1,19 @@
+main.main-content
+	.block__view.clearfix
+		.block__view_left
+			.block__view__title Сортировать по
+			.select__content
+				select.select
+					- var opt = ['по цене','по популярности']
+					each item in opt
+						option(value="")=item
+		.block__view_right
+			.block__view__title Вид каталога
+			ul.sort__content
+				- var  view =['row','grid','line']
+				each item in view
+					li(class="sort__content-#{item}").sort__content-item
+						a(href="#").sort__content-link a
+								
+
+		

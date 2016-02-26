@@ -1,0 +1,11 @@
+{
+  "name": "nikita",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-jade": "^1.1.0",
+    "gulp-plumber": "^1.1.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.2.0",
+    "gulp.spritesmith": "^6.2.0"
+  }
+}

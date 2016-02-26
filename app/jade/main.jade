@@ -1,0 +1,33 @@
+include _common/_mixins
+<!DOCTYPE html>
+html(lang="en")
+	head
+		meta(charset="UTF-8")
+		title 
+			block title
+		link(rel="stylesheet", href="css/main.css")		
+	body
+		.wrapper
+
+			include _common/_header
+
+			include _common/_breadcrumbs.jade
+
+			.container
+				h2.main-title
+					block h2
+
+			.container.clearfix
+				include _common/_sidebar
+				
+				block content
+				
+
+
+
+	script(src='js/jquery.js')
+	script(src='js/jquery-ui.min.js')
+	script(src='js/slider.js')
+	script(src='js/main.js')
+
+//- include _common/_header
