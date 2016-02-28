@@ -10,14 +10,14 @@ var paths = './app/jade/pages/*.jade';
 var s = './app/sass/**/*.scss';
 var YOUR_LOCALS = {};
 
-gulp.task('prefix', function () {
-  return gulp.src('./app/css/*.css')
-    .pipe(autoprefixer({
-      browsers: ['last 2 versions'],
-      cascade: false
-    }))
-    .pipe(gulp.dest('./app/css/'));
-});
+// gulp.task('prefix', function () {
+//   return gulp.src('./app/css/*.css')
+//     .pipe(autoprefixer({
+//       browsers: ['last 2 versions'],
+//       cascade: false
+//     }))
+//     .pipe(gulp.dest('./app/css/'));
+// });
 
 // Jade
 gulp.task('jade', function(){
@@ -55,7 +55,7 @@ gulp.task('sprite', function() {
 gulp.task('watch', function(){
  gulp.watch('./app/jade/**/*.jade',['jade']);
  gulp.watch(s,['sass']);
- gulp.watch(s,['prefix']);
+ // gulp.watch(s,['prefix']);
 });
 
 gulp.task('default', ['watch']);

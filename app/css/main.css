@@ -621,7 +621,7 @@ The `sprites` mixin generates identical output to the CSS template
 
 .search {
   float: left;
-  margin-right: 49px;
+  margin-right: 43px;
   font-size: 0; }
 
 .search-input {
@@ -677,7 +677,7 @@ The `sprites` mixin generates identical output to the CSS template
 
 .main-nav {
   font-size: 0;
-  padding: 0 11px;
+  padding: 0;
   padding-right: 0; }
 
 .main-nav-item {
