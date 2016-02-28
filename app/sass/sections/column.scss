@@ -1,0 +1,26 @@
+.column-text{
+	.main-title{
+		font-weight: bold;
+	}
+	p{
+		font-size: 14px;
+		line-height: 20px;
+		color:#333;
+		margin-bottom: 21px;
+	}
+
+	.column{
+		
+		&.first{
+			float:left !important;
+		}
+
+		&.last{
+			float:right !important;
+		}
+
+
+	}
+
+
+}

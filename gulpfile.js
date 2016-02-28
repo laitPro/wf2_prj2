@@ -3,11 +3,21 @@ var gulp = require('gulp'),
 	plumber = require('gulp-plumber'),
 	sass = require('gulp-sass'),
   spritesmith = require('gulp.spritesmith'),
-  rename = require("gulp-rename");
+  rename = require("gulp-rename"),
+  autoprefixer = require('gulp-autoprefixer');
 
 var paths = './app/jade/pages/*.jade';
 var s = './app/sass/**/*.scss';
 var YOUR_LOCALS = {};
+
+gulp.task('prefix', function () {
+  return gulp.src('./app/css/*.css')
+    .pipe(autoprefixer({
+      browsers: ['last 2 versions'],
+      cascade: false
+    }))
+    .pipe(gulp.dest('./app/css/'));
+});
 
 // Jade
 gulp.task('jade', function(){
@@ -45,6 +55,7 @@ gulp.task('sprite', function() {
 gulp.task('watch', function(){
  gulp.watch('./app/jade/**/*.jade',['jade']);
  gulp.watch(s,['sass']);
+ gulp.watch(s,['prefix']);
 });
 
 gulp.task('default', ['watch']);

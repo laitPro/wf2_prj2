@@ -4,14 +4,14 @@ header.main-header
 			ul.socials
 				- var socials = ['fb','vk','tw']
 				each item in socials
-					li.socials_item
-						a(href="#" class="socials_link_#{item}").socials_link
+					li.socials-item
+						a(href="#" class="socials-link-#{item}").socials-link
 			.contacts-info				
 				.addres 
-					i.icon.icon-i.icon-addres
+					i.icon.icon-addres
 					span.addres-text ул. Маяковская 6, офис 17
-				a(href="#").phone
-					i.icon.icon-i.icon-phone
+				a(href="tel:+79211231213").phone
+					i.icon.icon-phone
 					span.phone-text +7 (921) 123-12-13
 	.container.clearfix.block-find
 		a(href="index.html").logo
@@ -23,11 +23,11 @@ header.main-header
 		ul.user-nav
 			- var usernav = {'map':'Карта проезда','history':'История заказов','box':'Корзина'}
 			each item,i in usernav
-				li.user-nav_item
+				li.user-nav-item
 					if i=='map'
-						a(href="#" class="user-nav_link").user-nav_link_active=item
+						a(href="#" class="user-nav-link").user-nav-link-active=item
 					else
-						a(href="#" class="user-nav_link")=item
+						a(href="#" class="user-nav-link")=item
 	.nav					
 		.container.clearfix
 			ul.main-nav
@@ -35,9 +35,9 @@ header.main-header
 				each item,i in nav
 					li.main-nav-item
 						if i == 1
-							a(href="index.html" class="main-nav_link").main-nav_link_active=item
+							a(href="index.html" class="main-nav-link").main-nav-link-active=item
 						else
-							a(href="#" class="main-nav_link")=item	
+							a(href="#" class="main-nav-link")=item	
 
 
 

@@ -2,16 +2,16 @@ form.sidebar
 	ul.phone-category
 		-var category = ['Флагманы','Бюджетная линейка']
 			each item,i in category
-				li.phone-category_item
+				li.phone-category-item
 					if i == 1
-						a(href="#" class="phone-category_link").phone-category_link_active=item
+						a(href="#" class="phone-category-link").phone-category-link-active=item
 					else
-						a(href="#" class="phone-category_link")=item
+						a(href="#" class="phone-category-link")=item
 	.acco
-		ul.acco__list
+		ul.acco-list
 			li.acco-item
 				a(href="#" class="acco-triger-top").acco-trigger.togle-down Наличие в магазинах	
-				ul.acco__content
+				ul.acco-content
 					-
 						var mag = 
 						{
@@ -19,7 +19,7 @@ form.sidebar
 							'Not-all' : 'В ближайшем ко мне магазине'
 						}
 					each item,i in mag
-						li.acco__content-item
+						li.acco-content-item
 							if i == 'All'
 								input(type="radio" name='mag' id=i checked)
 								label(for=i).radio=item
@@ -29,19 +29,20 @@ form.sidebar
 
 			li.acco-item
 				a(href="#").acco-trigger.togle-down Бренды
-				ul.acco__content
+				ul.acco-content
 					-
 						var brand = [
 							'Lenovo','Apple','Samsung','Asus','Motorola'
 							]
 					each item in brand		
-						li.acco__content-item
+						li.acco-content-item
 							input(type="checkbox" name=item id=item)
 							label(for=item).checkbox=item
-					a(href="#").reset-filter Сбросить фильтр
+					li
+						a(href="#").reset-filter Сбросить фильтр
 			li.acco-item
 				a(href="#").acco-trigger.togle-down Цена
-				.acco__content					
+				.acco-content					
 					span.input-title от
 					input(type="text" id='min' value="2500" disabled).input-slider.input-slider-left
 					span.input-title до
@@ -50,7 +51,7 @@ form.sidebar
 			li.acco-item
 				a(href="#").acco-trigger.togle-down Цвет
 				input(type="text" name='color' id='color' value="")
-				ul.block-color.acco__content
+				ul.block-color.acco-content
 					-
 						var color = ['white','grey','black','d-blue','red','yellow','orange',
 							'green','blue','d-pink','pink','brown'
@@ -62,14 +63,15 @@ form.sidebar
 							li(class="color-item-#{item}").color-item
 			li.acco-item
 				a(href="#").acco-trigger.togle-down Операционные системы		
-				ul.acco__content
+				ul.acco-content
 					-
 						var oc = [
-							'Android','iOs','Windows Mobile','Symbian','Custom'
+							'Android','iOs','Windows-Mobile','Symbian','Custom'
 							]
 					each item in oc		
-						li.acco__content-item
+						li.acco-content-item
 							input(type="checkbox" name=item id=item)
 							label(for=item).checkbox=item
-					a(href="#").reset-filter Сбросить фильтр
+					li		
+						a(href="#").reset-filter Сбросить фильтр
 				

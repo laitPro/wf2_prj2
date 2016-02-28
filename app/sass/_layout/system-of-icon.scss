@@ -5,7 +5,9 @@
 	display: inline-block;
 	vertical-align:top;	
 }
-
+.icon-b{
+	display:block;
+}
 
 .icon-phone{
 	width: $phone-width;
@@ -18,3 +20,15 @@
 	height : $addres-height;
 	@include sprite-position($addres);
 }
+
+.icon-view{
+	position:absolute;
+	top:50%;
+	left:50%;
+	margin-top: -8px;
+	margin-left: -8px;
+	// transform:translate(-50%,-50%);
+	margin-top: -8px;
+	margin-left: -8px;
+}
+

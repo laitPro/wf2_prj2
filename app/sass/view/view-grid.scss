@@ -1,0 +1,134 @@
+.products-list-grid{
+	border-radius:0;
+	border:none;
+	// overflow:hidden;
+	overflow:visible;
+	background:transparent;
+
+	margin-left: -11px;
+
+	.products-item{
+		display: inline-block;
+		vertical-align:top;
+		width: 235px;
+		text-align:center;
+		border-radius:4px;
+		border:1px solid $ac-border;
+		margin-left: 13px;
+		margin-bottom: 19px;
+		background:$color-swhite;
+	}
+
+	.products-item-inner{
+		padding: 19px 10px;
+	}
+
+	.products-left{
+		float:none;
+	}
+
+	.products-slideshow{
+		width: auto;
+		text-align:center;
+		float:none;
+	}
+	.products-desc-title{
+		font-size: 14px;
+		padding: 0 24px;
+		margin-top: -7px;
+		margin-bottom: 6px;
+		font-weight: 600;
+	}
+
+	.products-slideshow-display{
+		display:inline-block;
+		margin-bottom: 13px;
+	}
+	.products-slideshow-item{
+		float:none;
+		display: inline-block;
+	}
+
+	.products-article{
+		display: none;
+	}
+
+	.products-desc{
+		width: auto;
+		float:none;
+		margin-left: 0;
+	}
+
+	.products-right{
+		position:static;
+		width: auto;
+	}
+	.products-info{
+		border:none;
+		text-align:center;
+		padding-left: 0;
+	}
+	.products-info-bottom{
+		position:static;
+		@extend .clearfix;
+		padding: 0 7px;
+	}
+	.products-buy-btn{
+		margin-bottom: 0;
+		float:right;
+		
+	}
+	.products-price{
+		display: inline-block;
+		vertical-align:top;
+		margin-bottom: 6px;
+	}
+	.products-available{
+		float:left;
+		padding-top: 7px;
+	}
+	.products-desc-options{
+		margin-bottom: 8px;
+	}
+	.products-option-item{
+		@extend .clearfix;
+		margin-bottom: 4px;
+	}
+	.products-rating{
+		margin-bottom: 5px;
+	}
+	.products-option-item{
+		
+		&:nth-child(2n){
+			background:#e6e6e6;
+		}
+	}
+	.products-slideshow-item{
+		margin-left: 11px;
+	}
+	.products-option-i{
+		display: block;
+		float:left;
+		width: 140px;
+		text-align:left;
+		margin-left: 2px;
+	}
+
+	.products-option-value{
+		display: block;
+		float:right;
+		width: 66px;
+		text-align:right;
+		margin-right: 2px;
+	}
+	.products-option-item{
+		display: block;
+	}
+	.products-option-about{
+		display: none;
+	}
+	.products-rating-amount{
+		margin-top: 2px;
+	}
+	
+}

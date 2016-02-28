@@ -1,0 +1,106 @@
+.main-footer{
+	height: 220px;
+	padding-top: 35px;
+	position:absolute;
+	bottom:0;
+	left:0;
+	right:0;
+	
+	background:url(../imgs/sprites/bac.png) repeat;
+
+
+
+	.logo{
+		float:left;
+		margin-top: 36px;
+	}
+
+}
+
+
+.footer-content{
+
+	float:right;
+	text-align:right;
+
+	// Социальные иконки
+	.socials{
+		float:none;
+		margin-bottom: 25px;
+	}
+
+	.socials_item{
+		display: inline-block;
+		vertical-align: top;
+		margin-right: 25px;
+
+		&:last-child{
+			margin-right: 0px;
+		}
+	}
+
+	.socials_link{
+		display: block;
+		border-radius: 50%;
+		width: 43px;
+		height: 43px;
+	}
+
+
+	.socials_link_fb{
+		@include sprite($footer-fb);
+			&:hover{
+				@include sprite($footer-fb-hover);
+			}
+	}
+	.socials_link_vk{
+		@include sprite($footer-vk);
+			&:hover{
+				@include sprite($footer-vk-hover);
+			}
+	}
+	.socials_link_tw{
+		@include sprite($footer-tw);
+			&:hover{
+				@include sprite($footer-tw-hover);
+			}
+	}
+
+}
+
+.footer-nav{
+	font-size: 0;
+	text-align:right;
+	width: 535px;
+	margin-bottom: 19px;
+}
+
+.footer-nav-item{
+	display: inline-block;
+	vertical-align:top;
+	margin-left: 24px;
+
+	&:first-child{
+		margin-left: 0;
+	}
+}
+
+.footer-nav_link{
+	font-size: 14px;
+	color:white;
+	line-height: 36px;
+	text-decoration:underline;
+}
+
+.copyright{
+	text-align:center;
+	color:white;
+	font-size: 12px;
+	line-height: 14px;
+
+	border-top:1px solid #494949;
+
+	padding-top: 6px;
+}
+
+

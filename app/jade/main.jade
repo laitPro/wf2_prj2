@@ -3,10 +3,35 @@ include _common/_mixins
 html(lang="en")
 	head
 		meta(charset="UTF-8")
+
 		title 
 			block title
-		link(rel="stylesheet", href="css/main.css")		
+
+		link(rel="stylesheet", href="css/main.css")
+
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+		<link rel="apple-touch-icon" sizes="57x57" href="imgs/fav/apple-icon-57x57.png">
+		<link rel="apple-touch-icon" sizes="60x60" href="imgs/fav/apple-icon-60x60.png">
+		<link rel="apple-touch-icon" sizes="72x72" href="imgs/fav/apple-icon-72x72.png">
+		<link rel="apple-touch-icon" sizes="76x76" href="imgs/fav/apple-icon-76x76.png">
+		<link rel="apple-touch-icon" sizes="114x114" href="imgs/fav/apple-icon-114x114.png">
+		<link rel="apple-touch-icon" sizes="120x120" href="imgs/fav/apple-icon-120x120.png">
+		<link rel="apple-touch-icon" sizes="144x144" href="imgs/fav/apple-icon-144x144.png">
+		<link rel="apple-touch-icon" sizes="152x152" href="imgs/fav/apple-icon-152x152.png">
+		<link rel="apple-touch-icon" sizes="180x180" href="imgs/fav/apple-icon-180x180.png">
+		<link rel="icon" type="image/png" sizes="192x192"  href="imgs/fav/android-icon-192x192.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="imgs/fav/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="96x96" href="imgs/fav/favicon-96x96.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="imgs/fav/favicon-16x16.png">
+		<link rel="manifest" href="img/fav/manifest.json">
+		<meta name="msapplication-TileColor" content="#ffffff">
+		<meta name="msapplication-TileImage" content="img/fav/ms-icon-144x144.png">
+		<meta name="theme-color" content="#ffffff">	
+
 	body
+
 		.wrapper
 
 			include _common/_header
@@ -14,20 +39,30 @@ html(lang="en")
 			include _common/_breadcrumbs.jade
 
 			.container
-				h2.main-title
-					block h2
+				
+				p.main-title
+
+					block p
 
 			.container.clearfix
+
 				include _common/_sidebar
-				
-				block content
-				
+
+				main.main-content
+
+					block content
+
+			.container			
+
+				include _common/_column
+
+			include _common/_footer	
 
 
 
-	script(src='js/jquery.js')
-	script(src='js/jquery-ui.min.js')
-	script(src='js/slider.js')
-	script(src='js/main.js')
-
-//- include _common/_header
+		script(src='js/jquery.js')
+		script(src='js/jquery-ui.min.js')
+		script(src='js/slider.js')
+		script(src='js/select2.min.js')
+		script(src='js/jquery.columnizer.min.js')
+		script(src='js/main.js')

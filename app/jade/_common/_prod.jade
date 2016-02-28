@@ -1,0 +1,80 @@
+.products
+	ul.products-list
+		- for (var i = 0; i<9; i++)
+			li.products-item
+				.products-item-inner.clearfix
+					.products-left
+						.products-slideshow
+							.products-slideshow-block
+								a(href="#").products-slideshow-display
+									img(src="imgs/content/sams.jpg" alt="hello").products-slideshow-img
+								ul.products-slideshow-icons.clearfix
+									- for (var j = 0; j < 3; j++)
+										if j === 0
+											li.products-slideshow-item
+												a(href="#").products-slideshow-link.products-slideshow-link-active
+													img(src="imgs/content/sams-1.jpg", alt="").products-slideshow-icon-img
+										if j === 1
+											li.products-slideshow-item
+												a(href="#").products-slideshow-link
+													img(src="imgs/content/sams-2.jpg", alt="").products-slideshow-icon-img
+										if j === 2
+											li.products-slideshow-item
+												a(href="#").products-slideshow-link
+													img(src="imgs/content/sams-3.jpg", alt="").products-slideshow-icon-img						
+							.products-article
+								.products-article-word Артикул
+								.products-article-num 189238
+					.products-desc
+						.products-desc-title Samsung GT-I9301I GALAXY S 3
+						ul.products-desc-options
+							li.products-option-about
+								| Смартфон Samsung GT-I9301I GALAXY S 3 Ceramic White Моноблок, Micro-SIM, Android 4.4, 3G, Bluetooth 4.0, EDGE, GPRS, WAP, Wi-Fi, Количество ядер процессора 4, Частота процессора 1400 МГц... 	
+							-
+								var opt = {
+									"Тип симкарты" : "Micro-SIM",
+									"Количество SIM-карт" : "1",
+									"Цвет" : "Белый",
+									'OC' : 'Android',
+									"Связь 3G" : 'Есть',
+									'4G(LTE)' : 'Нет',
+									'GPS-модуль' : 'Есть'
+								};
+							each value,i in opt
+								li.products-option-item
+									.products-option-i=i
+									.products-option-value=value	
+						.products-rating
+							ul.products-rating-stars
+								li.products-rating-stars-item.products-rating-stars-item-filed		
+								li.products-rating-stars-item.products-rating-stars-item-filed		
+								li.products-rating-stars-item.products-rating-stars-item-filed
+								li.products-rating-stars-item.products-rating-stars-item-filed		
+								li.products-rating-stars-item
+							.products-rating-amount 4			
+					.products-right
+						.products-info
+							.products-price 11 290
+								i.rub
+							.products-info-bottom
+								a(href="#").products-buy-btn В корзину
+								.products-available
+									| В наличии	
+	.pag
+		ul.pag-list
+			li.pag-item.pag-item-prev
+				a(href="#").pag-link
+					.pag-mark.pag-mark-left
+			- for (var i = 1; i < 4; i++)
+				if i == 1
+					li.pag-item
+						a(href="#").pag-link.active
+							.pag-mark=i
+				else
+					li.pag-item
+						a(href="#").pag-link
+							.pag-mark=i
+								
+			li.pag-item.pag-item-next
+				a(href="#").pag-link
+					.pag-mark.pag-mark-right					

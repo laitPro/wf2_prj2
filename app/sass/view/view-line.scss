@@ -1,0 +1,101 @@
+// Вид в виде линий самый простой
+.products-list-line{
+
+	.products-slideshow-block{
+		display: none;
+	}
+	.products-slideshow{
+		width: auto;
+	}
+
+	.products-desc-title{
+		display: none;
+	}
+
+	.products-rating{
+		display: none;
+	}
+
+	.products-item-inner{
+		padding:18px 12px;
+		padding-bottom: 7px;
+	}
+
+	.products-desc{
+		margin-left: 12px;
+		width: auto;
+	}
+
+	.products-desc-options{
+		margin-bottom: 0;
+	}
+
+	.products-option-about{
+		width: auto;
+		max-width: 287px;
+		line-height: 20px;
+		overflow:hidden;
+		white-space: nowrap;
+		text-overflow: ellipsis;
+	}
+
+	.products-article-word{
+		vertical-align:top;
+	}
+
+	.products-article-num{
+		vertical-align:top;
+	}
+
+	.products-right{
+		position:static;
+		display:inline-block;
+		vertical-align:top;
+		float:none;
+		text-align:left;
+
+		@extend .clearfix;
+	}
+
+	.products-info {
+		border:none;
+		padding-left: 0;
+		display: inline-block;
+		vertical-align:middle;
+		width: 345px;
+	}
+
+	.products-price{
+		display: inline-block;
+		vertical-align: top;
+		font-size: 18px;
+		line-height: 20px;
+	}
+
+	.products-info-bottom{
+		position:static;
+		display: inline-block;
+		vertical-align: top;
+		margin-top: -7px;
+		margin-left: 28px;
+		width: 209px;
+
+		@extend .clearfix;
+	}
+	.products-article{
+		padding-top: 2px;
+	}
+	
+	.products-available{
+		float:left;
+		margin-right: 20px;
+		padding-top: 10px;
+	}
+
+	.products-buy-btn{
+		float:right;
+		margin-bottom: 0;
+		margin-right: 5px;
+	}
+
+}

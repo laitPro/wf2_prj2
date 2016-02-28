@@ -1,5 +1,6 @@
 @import "_layout/normalize";
 @import "_layout/const";
+@import "_layout/fonts";
 @import "_layout/config";
 @import "_layout/sprite";
 @import "_layout/system-of-icon";
@@ -9,9 +10,21 @@
 
 .main-title{
 	font-size: 20px;
-	margin-bottom: 25px;
+	margin-bottom: 28px;
+	font-weight: 600;
 }
 
 @import "sections/sidebar";
 
-@import "sections/phone-list";
+
+.main-content{
+	float:right;
+	width: 743px;
+	margin-bottom: 28px;
+}
+
+@import "_layout/select2.min";
+@import "sections/sort";
+@import "sections/prod";
+@import "sections/column";
+@import "sections/footer";

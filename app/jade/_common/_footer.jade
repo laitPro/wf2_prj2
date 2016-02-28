@@ -1,4 +1,18 @@
 footer.main-footer
-	.container
-		.copyright
-			&copy;	All right reserved	dddddddd
+	.container.clearfix
+		a(href="index.html").logo
+			img(src="imgs/content/logo-footer.png", alt="logo").log-img
+			p.logo-text Cooltech
+		.footer-content
+			ul.socials
+				- var socials = ['fb','vk','tw']
+				each item in socials
+					li.socials_item
+						a(href="#" class="socials_link_#{item}").socials_link
+			ul.footer-nav
+				-var nav = ['Планшеты','Мобильные телефоны','Mp3 плееры','Персональыне компьютеры','Ноутбуки','Аксуссуары','Бытовая техника']
+				each item,i in nav
+					li.footer-nav-item
+						a(href="#" class="footer-nav_link")=item
+	.copyright
+		&copy; All rights reserved. 2015. no copy alowed
